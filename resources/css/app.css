@@ -1,0 +1,50 @@
+/* resources/css/app.css */
+
+/* Estilos personalizados */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Importar Bootstrap */
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
+.sidebarContainer {
+    display: flex;
+	height: 100%;
+}
+.sidebar {
+    background-color: #3498db !important;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    color: #fff;
+    /* Puedes agregar más estilos según tus necesidades */
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    color: #ffd700;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.sidebarHidden .sidebar {
+    display: none;
+}
